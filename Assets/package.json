@@ -1,0 +1,9 @@
+{
+  "name": "nemesisfrommars.uiframework",
+  "displayName": "NemesisFrommars Uiframework",
+  "unity": "2021.3",
+  "description": "NemesisFrommars Uiframework package",
+  "version": "1.0.0",
+    "dependencies": {
+    }
+}
