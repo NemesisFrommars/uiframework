@@ -66,7 +66,10 @@ namespace deVoid.UIFramework
 
         public override void HideScreen(IWindowController screen) {
             if (screen == CurrentWindow) {
-                windowHistory.Pop();
+                if (!screen.IgnoreHistory){
+                    windowHistory.Pop();
+                }
+
                 AddTransition(screen);
                 screen.Hide();
 
