@@ -1,9 +1,22 @@
 {
   "name": "nemesis.uiframework",
-  "displayName": "Nemesis Uiframework",
+  "displayName": "Nemesis UIframework",
+  "version": "1.0.3.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NemesisFrommars/uiframework.git"
+  },
   "unity": "2021.3",
-  "description": "Nemesis Uiframework package",
-  "version": "1.0.1",
+  "description": "Nemesis UIframework package",
   "dependencies": {
+  },
+  "keywords": [
+    "UIFramework"
+  ],
+  "author": {
+    "name": "Nemesis",
+    "email": "iv@nemesiscorporation.com",
+    "url": "https://nemesiscorporation.com/"
   }
+
 }
