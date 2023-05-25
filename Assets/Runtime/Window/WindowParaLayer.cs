@@ -22,6 +22,7 @@ namespace deVoid.UIFramework {
                 if (containedScreens[i] != null) {
                     if (containedScreens[i].activeSelf) {
                         darkenBgObject.SetActive(true);
+                        darkenBgObject.transform.SetAsFirstSibling();
                         return;
                     }
                 }
