@@ -83,6 +83,11 @@ namespace deVoid.UIFramework
                 }
             }
             else {
+                if (screen.IgnoreHistory) {
+                    screen.Hide();
+                    return;
+                }
+
                 Debug.LogError(
                     string.Format(
                         "[WindowUILayer] Hide requested on WindowId {0} but that's not the currently open one ({1})! Ignoring request.",
