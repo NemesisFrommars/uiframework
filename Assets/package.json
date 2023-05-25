@@ -4,7 +4,7 @@
   "version": "1.0.3.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NemesisFrommars/uiframework.git"
+    "url": "https://github.com/NemesisFrommars/uiframework.git?path=Assets"
   },
   "unity": "2021.3",
   "description": "Nemesis UIframework package",
