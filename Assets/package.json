@@ -1,7 +1,7 @@
 {
   "name": "nemesis.uiframework",
   "displayName": "Nemesis UIframework",
-  "version": "1.0.3.1",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/NemesisFrommars/uiframework.git?path=Assets"
