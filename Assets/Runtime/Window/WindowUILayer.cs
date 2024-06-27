@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace deVoid.UIFramework
@@ -116,6 +117,12 @@ namespace deVoid.UIFramework
             }
 
             base.ReparentScreen(controller, screenTransform);
+        }
+        
+        public bool IsAnyPopupOpened(IList<IWindowController> ignoreList = null) {
+            return ignoreList == null ? 
+                registeredScreens.Any(x => x.Value.IsPopup && x.Value.IsVisible) : 
+                registeredScreens.Any(x => !ignoreList.Contains(x.Value) && x.Value.IsPopup && x.Value.IsVisible);
         }
 
         private void EnqueueWindow<TProp>(IWindowController screen, TProp properties) where TProp : IScreenProperties {
