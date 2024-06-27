@@ -313,6 +313,14 @@ namespace deVoid.UIFramework
             type = null;
             return false;
         }
+        
+        /// <summary>
+        /// Checks if any screen is registered to the Window layer and have IsPopup set to true
+        /// also ignore list can be passed
+        /// </summary>
+        public bool IsAnyPopupOpened() {
+            return windowLayer.IsAnyPopupOpened();
+        }
 
         private void OnRequestScreenBlock() {
             if (graphicRaycaster != null) {
